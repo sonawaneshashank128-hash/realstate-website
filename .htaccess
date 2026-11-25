@@ -1,0 +1,5 @@
+Options -Indexes
+# Do not expose configuration or database scripts through the web.
+<FilesMatch "^(README\.md|\.env|composer\.(json|lock))$">
+  Require all denied
+</FilesMatch>
